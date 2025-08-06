@@ -1,0 +1,1906 @@
+/*========================================== MASTER STYLESHEET ===========================================================
+
+	Project     :	PHOTOGRAPHY LANDING PAGE
+	Version     :	1.0
+	Last Change : 	04/09/2019
+	Primary Use :   PHOTOGRAPHY LANDING PAGE
+
+====================================================================================================================*/
+
+/*========================================== LAYOUT ===================================================================
+
+	 1.GLOBAL CSS
+	 2.COMMON CSS3
+	 3.NAVIGATION
+	 4.BUTTON
+	 5.HEADER
+	 6.ABOUT US AREA
+	 7.PROJECT AREA
+	 8.SERVICE AREA
+	 9.WEDDING AREA
+	 10.COUNTERUP AREA
+	 11.TEAM AREA
+	 12.FAQ AREA
+	 13.VIDEO AREA
+	 14.PRICING AREA
+	 15.QUOTE AREA
+	 16.NEWS AREA
+	 17.TESTIMONIAL AREA
+	 18.CONTACT AREA
+	 19.FOOTER AREA
+	 20.MEDIA QUERIES
+	
+		
+======================================================================================================================*/
+
+/*========================================== COLOR CODES ===============================================================
+
+	Background         :#ffffff [White]
+	Theme Color        :#5c9494 [Half Baked]
+	Content Color      :#666666 [Black]
+	Button bg Color    :#5c9494 [Half Baked]
+
+================================================================================================================*/
+
+/*========================================== TYPOGRAPHY =====================================================
+
+	Heading:font-family: 'Playfair', sans-serif , Arial , Vedana , 'Trebuchet MS';
+	Body   :font-family: 'Opensans', sans-serif;
+
+====================================================================================================================*/
+
+/*========================================== 1.GLOBAL CSS START ===========================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+body {
+    background: #ffffff;
+    color: #666666;
+    font-family: 'Open sans', sans-serif, Arial, Vedana, 'Trebuchet MS';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #333333;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 54px;
+    color: #333333;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #333333;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 37px;
+    color: #333333;
+    letter-spacing: 1px;
+}
+
+h5 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #333333;
+    letter-spacing: 1px;
+}
+
+h6 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #333333;
+    letter-spacing: 1px;
+}
+
+/* SAFARI CLASS */
+
+.rowsafari {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5c9494;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/*================================================= 1.GLOBAL CSS END ===================================================*/
+
+/*========================================== 2.COMMON CSS START ===========================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0px;
+}
+
+#return-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #474a4a;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.fa-angle-up {
+    position: relative;
+    bottom: 2px;
+    left: 1px;
+}
+
+#return-to-top:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.section-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.section-padding-bottom {
+    padding-bottom: 40px;
+}
+
+.section-margin {
+    margin-bottom: 30px;
+}
+
+.sec-padding {
+    padding-bottom: 30px;
+}
+
+.sec-margin-left {
+    margin-left: 90px;
+}
+
+.sec-margin-right {
+    margin-right: 90px;
+}
+
+.section-space {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-subhead-background {
+    background-color: #5c9494;
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.section-subhead-leftright-img {
+    padding-left: 15px;
+    padding-right: 15px;
+    word-break: break-all;
+}
+
+.section-lineimg-ul {
+    display: table;
+    width: auto;
+    margin: 0 auto;
+}
+
+.section-lineimg-li {
+    display: inline-block;
+    float: left;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.section-content-li {
+    display: table-cell;
+    vertical-align: middle;
+    word-break: break-all;
+}
+
+.coler-text {
+    color: #5c9494;
+}
+
+.display-table {
+    display: table;
+}
+
+.display-table-cell {
+    display: table-cell;
+}
+
+.row-padding {
+    padding: 0px;
+}
+
+.sec-padding-left {
+    padding-left: 90px;
+}
+
+.sec-padding-right {
+    padding-right: 90px;
+}
+
+.section-gray-bg {
+    background-color: #f5f5ff;
+}
+
+.section-white-bg {
+    background-color: #ffffff;
+}
+
+.letter-spacing {
+    letter-spacing: 1px;
+}
+
+/*========================================== 2.COMMON CSS END ===========================================*/
+
+/*======================================== 3.NAVIGATION START ==============================================*/
+
+.nav-style {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.nav-btn {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-color {
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.nav-style:last-child {
+    padding-right: 0px;
+}
+
+.navbar-nav {
+    float: right !important;
+}
+
+.logo-style {
+    float: left;
+    padding: 15px 0px;
+}
+
+.navbar-light .navbar-nav .active>.nav-style,
+.navbar-light .navbar-nav .nav-style.active,
+.navbar-light .navbar-nav .nav-style.show,
+.navbar-light .navbar-nav .show>.nav-style {
+    color: #5c9494 !important;
+}
+
+.first-nav {
+    padding: 0px;
+}
+
+.nav-dark-ul {
+    background-color: #5c9494;
+    padding: 20px;
+}
+
+.nav-dark-li-one {
+    padding-left: 15px;
+    letter-spacing: 1px;
+}
+
+.nav-dark-li-two {
+    position: relative;
+    letter-spacing: 1px;
+    padding: 20px
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #666666;
+}
+
+.fa-facebook-f:before,
+.fa-facebook:before {
+    content: "\f09a";
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.fa-twitter:before {
+    content: "\f099";
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.fa-youtube:before {
+    content: "\f167";
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.pre-nav-align {
+    float: left;
+}
+
+.pre-nav-right-align {
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar .boxed-btn {
+    padding: 13px 20px;
+}
+
+.bg-dark .fa-envelope {
+    padding-right: 10px;
+}
+
+.bg-dark .fa-phone {
+    padding-right: 10px;
+}
+
+.pre-nav-word-break {
+    word-break: break-all;
+}
+
+/*============================================== 3.NAVIGATION END ==============================================*/
+
+/*============================================================= 4.BUTTON START =====================================================*/
+
+.boxed-btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666666;
+    padding: 12px 20px;
+    transition: all 0.3s ease-in;
+    letter-spacing: 1px;
+    border: 1px solid #666666;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.boxed-btn:hover {
+    background-color: #5c9494;
+    color: #ffffff;
+    border: 1px solid #5c9494;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}
+
+.btn-wrapper {
+    margin-top: 30px;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
+
+.btn-right-align {
+    padding-right: 15px;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*============================================================= 4.BUTTON END ======================================================*/
+
+/*======================================================== 5. HEADER START =======================================================*/
+
+.sub-head-bg {
+    background-color: #5c9494;
+    color: #ffffff;
+    padding: 10px;
+    display: table;
+    width: auto;
+}
+
+.home-header-bg {
+    background-image: url("../../images/1920x750x3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+/*===== FORM HEADER =============*/
+
+.form-header-space {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* STATIC HEADER  */
+
+.static-header-bg {
+    background-image: url("../../images/1920x750x4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.static-form-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/*============================================= 5. HEADER END ===================================================*/
+
+/*========================================================= 6.ABOUT US AREA START ==============================================================*/
+
+.aboutus-margin {
+    margin: auto;
+}
+
+.how-it-work-tab-nav {
+    margin-top: 30px;
+}
+
+.tab-body-bg {
+    background-color: #f5f5f5;
+    padding: 30px 15px;
+}
+
+.nav-tabs {
+    border: none;
+    display: block;
+    text-align: center;
+    font-size: 0;
+    padding: 10px;
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.nav-item {
+    display: inline-block;
+    padding-left: 15px;
+    border-radius: 25px;
+    vertical-align: middle;
+}
+
+.nav-item:first-child {
+    padding-left: 0px;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    color: #fff;
+    background-color: #5c9494;
+    border: none;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 60px;
+    padding: 0 0px;
+    color: #333333;
+    background-color: #CCCDC6;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 30px;
+}
+
+/*========================================================= 6.ABOUT US AREA END ==============================================================*/
+
+/*========================================================== 7.PROJECT AREA START ===============================================================*/
+
+/*========================================================== 7.PROJECT AREA END ===============================================================*/
+
+/*============================================================= 8.SERVICE AREA START =======================================================*/
+
+.width-50 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.service .section-margin-bottom.section-subhead-background {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/*=============================================================== 8.SERVICE AREA END ===========================================================*/
+
+/*============================================================== 9.WEDDING AREA START ======================================================*/
+
+.wedding-tab-width {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.wedding-area .section-subhead-background {
+    background-color: #5c9494;
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/*================================================================= 9.WEDDING AREA END ======================================================*/
+
+/*======================================================== 10.COUNDERUP AREA START ==========================================*/
+
+.count-num {
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.title-counterup {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.countup-area {
+    background-image: url(../../images/1920x750x2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*========================================================== 10.COUNTERUP AREA END ==========================================*/
+
+/*============================================================== 11.TEAM AREA START ==========================================*/
+
+.box {
+    position: relative;
+    overflow: hidden;
+    display: table;
+}
+
+.box:hover::before {
+    position: absolute;
+    background-color: rgba(34, 34, 34, 0.5);
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.box img {
+    width: auto;
+    height: auto;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.box:hover img {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    /* filter: blur(1px) hue-rotate(50deg);*/
+}
+
+.box .box-content {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 9;
+}
+
+.box .title {
+    opacity: 0;
+    transition: all 0.5s ease;
+    border-left: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    height: 200px;
+    width: 225px;
+    transform: translateX(-150px);
+    -webkit-transform: translateX(-150px);
+    -moz-transform: translateX(-150px);
+    z-index: 9;
+}
+
+.first-post {
+    font-size: 20px;
+}
+
+.second-post {
+    font-size: 14px;
+}
+
+.box .post {
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    padding: 0 5px 0px 5px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateX(-150px);
+    -webkit-transform: translateX(-150px);
+    -moz-transform: translateX(-150px);
+    display: block;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.box:hover .title,
+.box:hover .post,
+.box:hover .icon {
+    opacity: 1;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+}
+
+.box .icon {
+    list-style: none;
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+.box .icon li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.box .icon li a {
+    color: #5c9494;
+    background: #fff;
+    font-size: 20px;
+    line-height: 35px;
+    width: 35px;
+    display: block;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    vertical-align: middle;
+    padding: 0px 10px;
+}
+
+.box .icon li a:hover {
+    color: #fff;
+    background: #5c9494;
+}
+
+.hover {
+    background-color: #333333;
+    opacity: 0;
+}
+
+.hover:hover {
+    opacity: .5;
+}
+
+.team-content {
+    position: absolute;
+    bottom: 55px;
+    left: 0px;
+    right: 0px;
+    z-index: 9;
+}
+
+/*========== VERTICAL SLIDER ============*/
+
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.fa-angle-double-down:before {
+    content: "\f103";
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.fa-angle-double-up:before {
+    content: "\f102";
+    font-size: 60px;
+    color: #ffffff
+}
+
+.carousel-control-prev {
+    left: 378px !important;
+}
+
+.carousel-control-next {
+    right: -41px !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 20%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: inherit;
+}
+
+.prev-nxt-arrow {
+    position: absolute;
+    top: 25%;
+    right: -1px;
+    background-color: #5c9494;
+    width: 14%;
+}
+
+.sec-padding-right-team {
+    padding-right: 35px;
+}
+
+.top-arrow {
+    width: 100%;
+    display: table;
+    margin-top: 74px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.bottom-arrow {
+    width: 100%;
+    display: table;
+    margin-top: 16px;
+    text-align: center;
+}
+
+/*============================================================== 11.TEAM AREA END ==========================================*/
+
+/*============================================================== 12.FAQ AREA START ================================================*/
+
+.faq {
+    background-image: url(../../images/1920x1200x4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.faq-how-it-work-tab-nav {
+    margin-bottom: 20px;
+}
+
+.faq-nav-tabs {
+    border: none;
+    display: block;
+    text-align: center;
+    font-size: 0;
+}
+
+.faq-nav-item {
+    display: inline-block;
+    padding: 25px 10px;
+    border-radius: 25px;
+    padding-top: 0px;
+}
+
+.faq-nav-tabs .faq-nav-item .nav-link.active {
+    color: #fff;
+    background-color: #5c9494;
+    border: none;
+}
+
+.faq-nav-tabs .nav-link {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: #333333;
+    letter-spacing: 1px;
+    background-color: #f6f2fd;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq .section-margin-bottom.section-subhead-background {
+    margin: auto;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.faq-content {
+    width: 80%;
+    margin: auto;
+}
+
+.faq-all-content-sapce {
+    padding: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.faq-h6-style {
+    background-color: #f5f5f5;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 55px;
+    border-left: 1px solid #5c9494;
+}
+
+.faq-h6-style:after {
+    content: "\f067 ";
+    font-family: fontawesome;
+    position: absolute;
+    top: 16px;
+    left: 18px;
+    color: #5c9494;
+    vertical-align: middle;
+}
+
+.faq .section-padding-bottom {
+    padding-bottom: 50px;
+}
+
+/*============================================================= 12.FAQ AREA END ============================================*/
+
+/*================================================================ 13.VIDEO AREA START =========================================*/
+
+.iframe-video {
+    width: 100%;
+    height: 444px;
+    border: 0;
+}
+
+.video .section-margin-bottom.section-subhead-background {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/*================================================================ 13.VIDEO AREA START =========================================*/
+
+/*=========================================================== 14.PRICING AREA START ===============================================*/
+
+.single-price-plan {
+    text-align: center;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+.price-header {
+    border-bottom: 1px solid #d7d7d7;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.name {
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.price-body {
+    padding-top: 25px;
+}
+
+.price-wrap {
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.month {
+    font-size: 17px;
+}
+
+.price-body-para {
+    display: block;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-bottom: 1px solid #d7d7d7;
+    transition: all 0.3s ease-in;
+}
+
+.price-body-para p {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.pricing-section-space {
+    background-color: #22BDC4;
+    position: relative;
+}
+
+.price-padding-bottom {
+    padding-bottom: 150px;
+}
+
+.pricing .section-margin-bottom.section-subhead-background {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #222;
+}
+
+.pricing .boxed-btn {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+/*============================================== 14.PRICING AREA END ===============================================*/
+
+/*=================================================== 15.QUOTE AREA START ===================================================*/
+
+.quote-area-bg {
+    background-color: #333333;
+    padding: 50px;
+    position: absolute;
+    left: 0px;
+    bottom: -127px;
+    right: 0px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-input {
+    border: 1px solid #666666;
+    height: 55px;
+    width: 100%;
+    padding: 0 20px;
+    min-height: 0px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.quote-submit-btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    height: 55px;
+    width: 100%;
+    transition: all 0.3s ease-in;
+    letter-spacing: 1px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.quote-submit-btn:hover {
+    background-color: #5c9494;
+    color: #ffffff;
+    border: 2px solid #5c9494;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}
+
+.quote-sub-bottom {
+    padding-bottom: 10px;
+}
+
+.quote-area-overlay {
+    position: absolute;
+    z-index: 9;
+    top: 7655px;
+    left: 100px;
+}
+
+.quote-top-bottom {
+    margin-top: 30px;
+}
+
+.sub {
+    padding-bottom: 30px;
+}
+
+div#ResultMsg a {
+    color: #ffffff;
+}
+
+.messageDiv {
+    margin-top: 10px;
+}
+
+.SuccessMsg,
+.sucessMessage {
+    color: #0fa80f;
+    font-size: 14px !important;
+    line-height: 24px !important;
+}
+
+.failMsg,
+.failMessage {
+    color: #ff0000;
+    font-size: 14px !important;
+    line-height: 24px !important;
+}
+
+.subs-error-top {
+    color: #ff0000;
+    font-size: 14px !important;
+    line-height: 24px !important;
+    padding-top: 10px;
+}
+
+.form-textarea:-moz-placeholder,
+.form-input:-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: #666666;
+    opacity: 1;
+}
+
+.form-textarea::-webkit-input-placeholder,
+.form-input::-webkit-input-placeholder {
+    /* Chrome */
+    color: #666666;
+}
+
+.form-textarea:-ms-input-placeholder,
+.form-input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #666666;
+}
+
+.form-textarea::-moz-placeholder,
+.form-input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #666666;
+    opacity: 1;
+}
+
+.form-textarea.errorClass:-moz-placeholder,
+.form-input.errorClass:-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: #ff0000;
+    opacity: 1;
+}
+
+.form-textarea.errorClass::-webkit-input-placeholder,
+.form-input.errorClass::-webkit-input-placeholder {
+    /* Chrome */
+    color: #ff0000;
+}
+
+.form-textarea.errorClass:-ms-input-placeholder,
+.form-input.errorClass:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #ff0000;
+}
+
+.form-textarea.errorClass::-moz-placeholder,
+.form-input.errorClass::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ff0000;
+    opacity: 1;
+}
+
+/*=================================================== 15.QUOTE AREA END =============================================*/
+
+/*================================================= 16.NEWS AREA START ===============================================*/
+
+.fa-calendar:before {
+    content: "\f073";
+    padding-right: 5px;
+    color: #5c9494;
+}
+
+.fa-user:before {
+    content: "\f007";
+    padding-right: 5px;
+    color: #5c9494;
+}
+
+.fa-comment:before {
+    content: "\f075";
+    padding-right: 5px;
+    color: #5c9494;
+}
+
+.fa-head-padding {
+    padding-right: 15px;
+    letter-spacing: 1px;
+}
+
+.read-font {
+    color: #5c9494;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.news-area-bg {
+    background-color: #F5F5DC;
+}
+
+.news-margin-top {
+    margin-top: 130px;
+}
+
+.news .section-margin-bottom.section-subhead-background {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/*================================================== 16.NEWS AREA END ================================================*/
+
+/*================================================ 17.TESTIMONIAL AREA START ==========================================*/
+
+.testimonial-center-content {
+    background-color: #5c9494;
+    padding: 50px;
+    padding-bottom: 80px;
+}
+
+.testimonial-left-content {
+    background-color: #F5F5DC;
+    padding: 40px 20px;
+}
+
+.testimonial-right-content {
+    background-color: #F5F5DC;
+    padding: 40px 20px;
+}
+
+.fa-quote-left:before {
+    content: "\f10d";
+    font-size: 30px;
+    color: #5c9494;
+}
+
+.small,
+small {
+    font-size: 75%;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.testimonial-main {
+    display: flex;
+    display: -webkit-inline-box;
+}
+
+.testimonial-left {
+    width: 50%;
+}
+
+.testimonial-right {
+    width: 50%;
+}
+
+.slider-header .owl-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 125px;
+}
+
+.padding-auto {
+    padding-top: 45px;
+}
+
+/*============================================= 17.TESTIMONIAL AREA END ============================================*/
+
+/*============================================== 18.CONTACTUS AREA START ==============================================*/
+
+.contact-bg {
+    background-image: url("../../images/1920x750x5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contact .form-input {
+    border: 1px solid #666666;
+    height: 55px;
+    width: 100%;
+    padding: 0 35px;
+    min-height: 0px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 20px;
+    position: relative;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+.submit-btn {
+    padding: 15px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    background-color: #ff6780;
+    border: none;
+    cursor: pointer;
+}
+
+.form-control-text {
+    border: 1px solid #666666;
+    height: 60px;
+    padding: 15px 35px;
+    min-height: 150px;
+    width: 100%;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+.form-textarea-top-spacing {
+    padding-top: 30px;
+}
+
+label {
+    color: #ff0000;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.username-icon:before {
+    content: "\f007";
+    font-size: 16px;
+    font-family: fontawesome;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 27px;
+    vertical-align: middle;
+}
+
+.phone-icon:before {
+    content: "\f095";
+    font-size: 16px;
+    font-family: fontawesome;
+    position: absolute;
+    z-index: 1;
+    top: 46px;
+    left: 27px;
+    vertical-align: middle;
+}
+
+.email-icon:before {
+    content: "\f0e0";
+    font-size: 16px;
+    font-family: fontawesome;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 27px;
+    vertical-align: middle;
+}
+
+.message-icon:before {
+    content: "\f086";
+    font-size: 16px;
+    font-family: fontawesome;
+    position: absolute;
+    z-index: 1;
+    top: 45px;
+    left: 27px;
+    vertical-align: middle;
+}
+
+.map1 {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+.form-input::placeholder {
+    color: #666666;
+    opacity: 1;
+}
+
+.form-control-text::placeholder {
+    color: #666666;
+    opacity: 1;
+}
+
+/*===================================================== 18.CONTACT US AREA END ================================================*/
+
+/*======================================================= 19.FOOTER AREA START =================================================*/
+
+.footer-area {
+    background-color: #333333;
+}
+
+.reach-img-display {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.reach-us-contant-display {
+    display: table-cell;
+    padding-left: 15px;
+}
+
+.para {
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+    word-break: break-word;
+    color: #a9a9a9;
+}
+
+.para span {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer-align {
+    text-align: center;
+}
+
+.footer-area .form-input {
+    border: 1px solid #ededed;
+    height: 45px;
+    width: 100%;
+    padding: 0 20px;
+    min-height: 0px;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.footer-area .boxed-btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 10px 96px;
+    transition: all 0.3s ease-in;
+    letter-spacing: 1px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.footer-area .boxed-btn:hover {
+    background-color: #5c9494;
+    color: #ffffff;
+    border: 1px solid #5c9494;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}
+
+.copy-right {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+}
+
+.line-mar {
+    margin-top: 15px;
+    border-top: 1px solid;
+}
+
+p a {
+    color: #999999;
+}
+
+/*========================================= 19.FOOTER AREA END ====================================*/
+
+/*========================================== 20.MEDIA QUERIES START ====================================*/
+
+@media only screen and (max-width: 991px) {
+    .section-space {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    h1 {
+        font-size: 31px;
+        line-height: 41px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    h4 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    h5 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    h6 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .section-margin-bottom {
+        margin-bottom: 15px;
+    }
+    .width-50 {
+        width: 100%;
+    }
+    .res-padding-bottom {
+        padding-bottom: 30px;
+    }
+    .slider-header .owl-pagination {
+        position: inherit;
+        bottom: 0px;
+        left: 0px;
+        padding-top: 20px;
+    }
+    .owl-theme .owl-controls .owl-page span {
+        background-color: #5c9494;
+    }
+    .testimonial-center-content {
+        padding-bottom: 50px;
+    }
+    .res-margin-bottom {
+        margin-bottom: 30px;
+    }
+    .faq .section-padding-bottom {
+        padding-bottom: 30px;
+    }
+    .faq-all-content-sapce {
+        width: 100%;
+        padding: 20px 0px;
+    }
+    .res-text-align {
+        text-align: center !important;
+    }
+    .sec-padding-right-team {
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    .pricing-section-space {
+        position: inherit;
+    }
+    .navbar-nav {
+        background-color: #F5F5DC;
+        display: block;
+        padding: 0px 20px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .navbar-collapse {
+        max-height: 180px;
+        overflow: auto;
+    }
+    .nav-btn:last-child {
+        padding-left: 0px;
+    }
+    .nav-style {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .header-content {
+        width: 100%;
+    }
+    .quote-res-padding-bottom {
+        padding-bottom: 0px;
+    }
+    .price-padding-bottom {
+        padding-bottom: 30px;
+    }
+    .news-margin-top {
+        margin-top: 0px;
+    }
+    .quote-area-bg {
+        position: inherit;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+    }
+    .wedding-tab-width {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .padding-auto {
+        padding-top: 0px;
+    }
+    .service .section-margin-bottom.section-subhead-background {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 60%;
+    }
+    .fa-angle-double-up:before {
+        font-size: 40px;
+    }
+    .fa-angle-double-down:before {
+        font-size: 40px;
+    }
+    .sec-margin-right {
+        margin-right: 0px;
+    }
+    .sec-margin-left {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .sub-head-bg {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .header-align {
+        text-align: center;
+    }
+    .quote-res-top {
+        padding-top: 20px;
+    }
+    .res-quote-mar-top {
+        margin-top: 30px;
+    }
+    .form-header-mar-bottom {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .box .box-content {
+        top: 15px;
+        left: 15px;
+    }
+    .team-content {
+        bottom: 54px;
+    }
+    .prev-nxt-arrow {
+        position: absolute;
+        top: 30%;
+        right: -26px;
+        background-color: #5c9494;
+        width: 56px;
+    }
+    .bottom-arrow {
+        display: block;
+        margin-top: 0px;
+    }
+    .top-arrow {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .no-padding {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .res-row-padding-bottom {
+        padding-bottom: 30px;
+    }
+    .pre-nav-right-align {
+        padding-top: 23px;
+        padding-bottom: 20px;
+    }
+    .display-table {
+        display: inherit;
+    }
+    .res-mail {
+        display: inherit;
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .nav-dark-li-two {
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .header-font-size {
+        font-size: 33px;
+        line-height: 50px;
+    }
+    .ml-auto,
+    .mx-auto {
+        margin-left: 0px !important;
+    }
+    .header-ul {
+        display: inherit;
+    }
+    .left-border {
+        border: none;
+        display: inherit;
+        width: auto;
+    }
+    .right-border {
+        border: none;
+        display: inherit;
+        width: auto;
+    }
+    .fa-facebook-f:before,
+    .fa-facebook:before {
+        padding-right: 10px;
+    }
+    .fa-twitter:before {
+        padding-right: 10px;
+    }
+    .fa-youtube:before {
+        padding-right: 10px;
+    }
+    .fa-instagram:before {
+        padding-right: 10px;
+    }
+    .home-header-bg,
+    .static-header-bg {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .header-bg {
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+    .header-content-padding {
+        padding: 0px;
+    }
+    .quote-area-bg {
+        padding: 35px 15px;
+    }
+    .pre-nav-align {
+        float: none;
+    }
+    li.nav-dark-li-one.display-table-cell:first-child {
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .pre-nav-right-align {
+        float: none;
+        display: table;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    .section-subhead-background {
+        margin: 0 auto !important;
+        margin-bottom: 20px !important;
+        width: 65% !important;
+    }
+    .faq .section-margin-bottom.section-subhead-background {
+        margin: 0 auto !important;
+        margin-bottom: 20px !important;
+        width: 70% !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-tabs .nav-link {
+        width: 20px;
+        height: 20px;
+    }
+    .nav-item {
+        padding-left: 10px;
+    }
+    .testimonial-main {
+        display: block;
+    }
+    .testimonial-left {
+        width: 100%;
+    }
+    .testimonial-right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .section-subhead-background {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .res-row-padding-bottom {
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .counter-width {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .section-subhead-background {
+        margin: 0 auto !important;
+        margin-bottom: 20px !important;
+        width: 50% !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .section-subhead-background {
+        margin: 0 auto !important;
+        margin-bottom: 20px !important;
+        width: 40% !important;
+    }
+    .faq .section-margin-bottom.section-subhead-background {
+        margin: 0 auto !important;
+        margin-bottom: 20px !important;
+        width: 60% !important;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+    .slider-header .owl-pagination {
+        left: 95px;
+    }
+    .testimonial-left-content {
+        padding: 20px 20px;
+    }
+    .quote-area-bg {
+        padding: 30px;
+        bottom: -107px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .footer-area .form-input {
+        width: 210px;
+    }
+    .footer-area .boxed-btn {
+        padding: 10px 74px;
+    }
+    .sec-padding-right {
+        padding-right: 0px;
+    }
+    .sec-padding-left {
+        padding-left: 0px;
+    }
+    .box:hover::before {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 991px) {
+    .res-col,
+    .single-price-plan {
+        width: 280px;
+        margin: 0 auto;
+    }
+}
+
+/* SAFARI MENU ISSUES*/
+
+@media only screen and (min-width: 992px) {
+    /*safari Browser*/
+    .navbar-expand-lg .navbar-collapse {
+        float: right !important;
+        display: block !important;
+        line-height: 30px !important;
+    }
+    .navbar-expand-lg .safari-menu {
+        display: inline-block !important;
+        vertical-align: middle !important;
+    }
+}
+
+/*====================================================== 20.MEDIA QUERIES END =======================================*/
